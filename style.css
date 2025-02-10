@@ -1,0 +1,165 @@
+@keyframes pisca {
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.urna {
+    display: flex;
+    background-color: #dbd5c9;
+    padding: 30px;
+
+}
+.tela {
+    width: 450px;
+    height: 350px;;
+    margin: 20px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #808080 ;
+    display: flex;
+    flex-direction: column;
+}
+.teclado {
+    background-color: #403A3A;
+    display: flex;
+    flex-direction: column;
+
+}
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+}
+.teclado--botao {
+    background-color: black;
+    color: #fff;
+    width: 75px;    
+    height: 47px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 1px #252525;
+    font-weight: bold;
+
+}
+.branco {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 15px;
+    width: 85px;
+    height: 40px;
+}
+.laranja {
+    background-color: #ffa41c;
+    color: #000;
+    font-size: 15px;
+    width: 85px;
+    height: 40px;
+}
+.verde {
+    background-color: #4c8f3b;
+    color: #000;
+    font-size: 15px;
+    width: 95px;
+    height: 48px;
+}
+.divisao--one {
+    flex: 1;
+}
+.divisao--two {
+    border-top: 1px solid #000;
+
+}
+.area {
+    display: flex ;
+    justify-content: space-between;
+    height: 60px;
+
+}
+.voto--one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px  15px;
+}
+.voto--two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px  15px;
+}
+.img--one img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71px;
+    height: 78px;
+    margin: 3px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.img--two img{
+    display: flex ;
+        align-items: center;
+        justify-content: center;
+        width: 61px;
+        height: 80px;
+        margin: 49px 15px;
+        margin-bottom: 6px;
+        border: 1px solid #000;
+}
+.info--voto {
+    margin: 15px 10px;
+}
+.name {
+    margin: 5px 5px;
+}
+.partido{
+    margin: 5px  5px;
+}
+.vice {
+    margin: 5px  5px;
+}
+.number {
+  display: flex;
+  margin: 10px  15px;
+}
+.numbers--one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 35px;
+    border: 1px solid #000;
+    margin: 0px 2px;
+    font-size: 20px;
+}
+.numbers--two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 33px;
+    border: 1px solid #000;
+    margin: 0px 2px;
+    font-size: 20px;
+
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
