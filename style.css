@@ -88,17 +88,17 @@ body {
     height: 60px;
 
 }
-.voto--one {
+.voto--para {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px  15px;
 }
-.voto--two {
+.voto--persona {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px  15px;
+    margin: 0px  134px;
 }
 .img--one img{
     display: flex;
@@ -136,7 +136,7 @@ body {
   display: flex;
   margin: 10px  15px;
 }
-.numbers--one {
+.numbers{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,20 +146,15 @@ body {
     margin: 0px 2px;
     font-size: 20px;
 }
-.numbers--two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    width: 33px;
-    border: 1px solid #000;
-    margin: 0px 2px;
-    font-size: 20px;
 
-}
 .pisca{
     animation-name: pisca;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 
+}
+.voto--nulo{
+    font-size: 40px;
+    margin: 20px;
+    font-weight: bold;
 }
