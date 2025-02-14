@@ -12,6 +12,11 @@ body {
     align-items: center;
     height: 100vh;
 }
+.back{
+    display: flex;
+    
+
+}
 
 
 .urna {
@@ -157,4 +162,75 @@ body {
     font-size: 40px;
     margin: 20px;
     font-weight: bold;
+}
+.voto--fim {
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.santo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    margin: 30px;
+    background-color: #e91010;
+    border-radius: 20px;
+}
+ .color{
+    background-color: #2610e9;
+ }
+
+.santo img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.santo--nome {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}.santo--desc {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.santo--number {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.next {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
+.escolha {
+    font-size: 30px;
+    color: #ffffff;
+    
+}
+.santoB {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    margin: 30px;
+    background-color: #1026e9;
+    border-radius: 20px;
 }
