@@ -119,28 +119,38 @@
       newStep()
     }
 
-    function confirma(){
-      let step = etapas[etapa]
-      let votoConfirm = false
-
-      if(votoBranco === true){
-        votoConfirm = true
-        console.log ('Slk confirmou o Branco Pae, olha oq ce é > 卍')
-      } else if(numero.length <= step.numeros) {
-         votoConfirm = true
-         console.log("Confirmado Numero " + numero)
+    function confirma() {
+      let step = etapas[etapa];
+      let votoConfirm = false;
+      let tela = document.querySelector('.tela')
+  
+      if (votoBranco === true) {
+          votoConfirm = true;
+          console.log('Voto em branco confirmado.');
+      } else if (numero.length === step.numeros) {
+          votoConfirm = true;
+          console.log("Confirmado número " + numero);
       }
+  
+      if (votoConfirm) {
+          etapa++;
+          if (etapas[etapa] !== undefined) {
+              newStep();
+          } else {
+              console.log("Fim da votação!");
+              tela.innerHTML = `<div class="voto--fim pisca">FIM</div>`;
+              tela.classList.add('screen')
 
 
-        if(votoConfirm){
-          etapa++
-          if(step !== undefined){
-            newStep()
+              let somFim = document.getElementById('somFim');
+            somFim.play(); // Reproduz o som
+        
           }
-        } else {
-          console.log(`FIm`)    
-        }
-     }
+      } else {
+          console.log(`Voto não confirmado.`);
+      }
+  }
+  
 
 
 
@@ -171,6 +181,37 @@
       nextB.style.marginBottom = '20px'
 
       candidato = candidato[0]
+
+      
+      if(etapa === 0){
+        etapa++
+        candidato[0]
+      } else  {
+        etapa = 0;
+      }
+
+     nextDesc.innerHTML = step.titulo
+     nextName.innerHTML = candidato.nome
+     nextNumber.innerHTML = candidato.numero
+
+     let nextImgHtml = ''
+     for(let i in candidato.fotos){
+       if(!candidato.fotos[i].small) {
+        nextImgHtml += `<div class="santo--img"><img src="images/${candidato.fotos[i].url}"</div>`
+       }
+    
+     }
+     nextImg.innerHTML = nextImgHtml;
+
+     }
+
+
+     function nextBi() {
+      let step = etapas[etapa];
+      let candidato = step.candidatos
+      nextEsc.innerHTML = ''
+
+      candidato = candidato[1]
 
       
       if(etapa === 0){
